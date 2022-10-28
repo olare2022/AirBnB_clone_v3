@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Web Flask
 
 This was a sub-project within AirBnB in which I began working with Flask
@@ -21,3 +22,6 @@ HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_flask.100-hbnb
 ```
 
 The app can be accessed at `0.0.0.0:5000/hbnb`.
+=======
+# 0x04. AirBnB clone - Web framework
+>>>>>>> 0e0c3809a0163bc9e78f5689a9145452a504827f

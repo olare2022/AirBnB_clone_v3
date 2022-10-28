@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 '''
     Package initializer
 '''
@@ -24,3 +25,21 @@ if getenv("HBNB_TYPE_STORAGE", "fs") == "db":
                                               "Review": Review}
 
                         storage.reload()
+=======
+"""
+initialize the models package
+"""
+
+from os import getenv
+
+
+storage_t = getenv("HBNB_TYPE_STORAGE")
+
+if storage_t == "db":
+    from models.engine.db_storage import DBStorage
+    storage = DBStorage()
+else:
+    from models.engine.file_storage import FileStorage
+    storage = FileStorage()
+storage.reload()
+>>>>>>> 0e0c3809a0163bc9e78f5689a9145452a504827f
